@@ -15,3 +15,11 @@ cols = df[["Age", "Fare"]]
 print(cols.head())
 
 # TIP: .head() is used to show only the first 5 rows
+
+print("\n --- \n")  # separator
+
+
+# Create a new column
+# TIP: You can use a condition to create values for the new column
+df["Male"] = df["Sex"] == "male"
+print(df.head())
