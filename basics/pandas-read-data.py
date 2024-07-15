@@ -1,5 +1,8 @@
 import pandas as pd
 
+# A DataFrame is a 2-dimensional labeled data structure
+# with columns of potentially different types.
+
 # Read CSV file from data folder
 # TIP: The path is relative to the root folder where you run the script
 df = pd.read_csv("data/titanic.csv")
