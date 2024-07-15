@@ -1,3 +1,5 @@
+import numpy as np
+
 # AVERAGES
 # Mean - average of all numbers
 # Add all numbers and divide by the number of numbers
@@ -49,3 +51,13 @@ print(round(variance, 2))  # 40.22
 # Calculate the standard deviation
 standard_deviation = variance**0.5  # or math.sqrt(variance)
 print(round(standard_deviation, 2))  # 6.34, the square root of variance
+
+# NUMPY
+# We can use the numpy library to calculate these statistics
+print("mean:", round(np.mean(ages)))  # 23
+print("median:", round(np.median(ages)))  # 22
+print("50th percentile:", round(np.percentile(ages, 50)))  # 22
+print("25th percentile:", round(np.percentile(ages, 25)))  # 18
+print("75th percentile:", round(np.percentile(ages, 75)))  # 29
+print("standard deviation:", round(np.std(ages), 2))  # 6.34
+print("variance:", round(np.var(ages)))  # 40
