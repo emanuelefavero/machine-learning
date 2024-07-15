@@ -2,6 +2,13 @@
 
 This repository contains code for various machine learning concepts and algorithms. The code is written in Python and uses libraries such as NumPy, Pandas and Scikit-learn.
 
+## Table of Contents
+
+### Basics
+
+- [Statistics Basics](basics/statistics-basics.py)
+- [Pandas - Read Data](basics/pandas-read-data.py)
+
 ## Installation
 
 > Note: Make sure you have Python 3.6 or higher installed on your system before proceeding with the installation
