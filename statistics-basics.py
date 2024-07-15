@@ -26,3 +26,26 @@ print(percentile_25)  # 18
 # 75th percentile - 75% of the data is below this value
 percentile_75 = ages[int(len(ages) * 0.75)]  # or / 1.33
 print(percentile_75)  # 29
+
+# STANDARD DEVIATION and VARIANCE
+# Standard deviation - is the square root of the variance
+# It measures how spread out the numbers are
+# Variance - average of the squared differences from the mean
+
+# Calculate the variance
+distances_from_mean = []
+for age in ages:
+    distances_from_mean.append(abs(age - mean))
+print(distances_from_mean)  # [8, 7, 5, 4, 1, 1, 6, 7, 11]
+
+squared_distances = []
+for distance in distances_from_mean:
+    squared_distances.append(distance**2)  # or math.pow(distance, 2)
+print(squared_distances)  # [64, 49, 25, 16, 1, 1, 36, 49, 121]
+
+variance = sum(squared_distances) / len(ages)  # average of squared distances
+print(round(variance, 2))  # 40.22
+
+# Calculate the standard deviation
+standard_deviation = variance**0.5  # or math.sqrt(variance)
+print(round(standard_deviation, 2))  # 6.34, the square root of variance
