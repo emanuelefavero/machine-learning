@@ -17,3 +17,12 @@ else:
 print(median)  # 22
 # TIP: You can also use the floor division operator (//) to get the middle index
 # middle = len(ages) // 2
+
+# PERCENTILES
+# 25th percentile - 25% of the data is below this value
+percentile_25 = ages[int(len(ages) * 0.25)]  # or / 4
+print(percentile_25)  # 18
+
+# 75th percentile - 75% of the data is below this value
+percentile_75 = ages[int(len(ages) * 0.75)]  # or / 1.33
+print(percentile_75)  # 29
