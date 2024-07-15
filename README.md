@@ -20,3 +20,7 @@ This repository contains code for various machine learning concepts and algorith
 - Example: `python basics/statistics-basics.py`
 
 > Tip: You can also use `nodemon` to automatically restart the output whenever you make changes to the file. Install nodemon using `npm install -g nodemon` and run the python file using `nodemon --exec python {folder}/{file}`
+
+## License
+
+- [MIT](LICENSE.md)
