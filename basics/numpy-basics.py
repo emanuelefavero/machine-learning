@@ -21,3 +21,9 @@ print(df.values)
 # for row in df.values:
 #     for value in row:
 #         print(value)
+
+# NUMPY SHAPE ATTRIBUTE
+# Get how many rows and columns are in our data
+print("Shape:")
+array = df[["Fare", "Age"]].values
+print(array.shape)  # (4, 2) -> 4 rows, 2 columns
