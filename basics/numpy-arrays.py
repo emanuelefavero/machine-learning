@@ -2,6 +2,8 @@ import pandas as pd
 
 df = pd.read_csv("data/titanic.csv")
 
+# SELECTING
+
 # Define a NumPy array with values from multiple columns
 arr = df[["Pclass", "Fare", "Age"]].values
 print("NumPy array:")
@@ -37,3 +39,13 @@ first_class_passengers = arr[arr[:, 0] == 1]
 first_class_passengers_ages = first_class_passengers[:, 1]
 print("First class passengers ages:")
 print(first_class_passengers_ages)  # [38 35 ...]
+
+# SUMMING AND COUNTING
+# Summing an array of boolean values will count the number of True values,
+# giving us for instance the count of passengers in first class:
+
+arr = df[["Pclass", "Age"]].values
+mask = arr[:, 0] == 1  # select items where column 0 (Pclass) is equal to 1
+print("First class passengers count:")
+print(mask)  # [ False True False ...]
+print(mask.sum())  # 2 passengers in first class
