@@ -15,3 +15,9 @@ print(df[["Fare", "Age"]].values)
 # Get all values from the DataFrame
 print("All values:")
 print(df.values)
+
+# Print all values from the DataFrame
+# print("All values with Numpy:")
+# for row in df.values:
+#     for value in row:
+#         print(value)
