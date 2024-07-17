@@ -25,3 +25,12 @@ array = np.array([[1, 2], [3, 4]])
 # reshaped = array.reshape(4)  # 4 elements
 reshaped = array.reshape(-1)  # -1 means unknown dimension
 print(reshaped)  # [1 2 3 4]
+
+# ------------------------------
+
+# TIP: Remember, to know the shape of the array,
+# you can use the shape attribute
+print(array.shape)  # (2, 2)
+# TIP: To know the number of elements in the array,
+# you can use the size attribute
+print(array.size)  # 4
