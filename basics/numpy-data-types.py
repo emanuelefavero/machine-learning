@@ -55,3 +55,25 @@ print(array.dtype)  # |S5
 array = np.array([], dtype="V")
 print(array.dtype)  # |V8
 # TIP: |V8 means "Void data type of 8 bytes"
+
+# CONVERT DATA TYPES
+# The best way to convert data types is to copy the array with
+# the astype() method and specify the new data type
+array = np.array([1.4, 1.6])
+copy = array.astype(int)  # TIP: You can also pass "i" instead of int
+print(copy)  # [1 1]
+
+# Convert from int to bool
+array = np.array([0, 1, 2])
+copy = array.astype(bool)
+print(copy)  # [False  True  True]
+
+# Convert from bool to int
+array = np.array([True, False])
+copy = array.astype(int)
+print(copy)  # [1 0]
+
+# Convert from int to string
+array = np.array([1, 2])
+copy = array.astype(str)  # TIP: You can also pass "U" instead
+print(copy)  # ['1' '2']
