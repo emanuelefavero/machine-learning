@@ -51,3 +51,26 @@ print(raveled)  # [1 2 3 4]
 print(raveled.base is array)  # True
 # TIP: The ravel() method returns a view of the original array
 
+# ------------------------------
+
+# ROTATE ARRAY
+# The rot90() method rotates the array by 90 degrees
+array = np.array([[1, 2], [3, 4]])
+rotated = np.rot90(array)
+print(rotated)  # [[2 4] [1 3]]
+
+# FLIP ARRAY
+# The flip() method flips the array
+array = np.array([[1, 2], [3, 4]])
+flipped = np.flip(array)
+print(flipped)  # [[4 3] [2 1]]
+
+# FLIP ARRAY IN LEFT/RIGHT DIRECTION
+array = np.array([[1, 2], [3, 4]])
+flipped = np.fliplr(array)
+print(flipped)  # [[2 1] [4 3]]
+
+# FLIP ARRAY IN UP/DOWN DIRECTION
+array = np.array([[1, 2], [3, 4]])
+flipped = np.flipud(array)
+print(flipped)  # [[3 4] [1 2]]
