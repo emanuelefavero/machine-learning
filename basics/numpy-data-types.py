@@ -36,3 +36,22 @@ array = np.array(["2024-07-17"], dtype="datetime64[D]")
 print(array.dtype)  # datetime64[D]
 print(array)  # ['2024-07-17T00']
 # TIP: datetime64[Y] will only return the year etc...
+
+# O - object
+array = np.array([{"a": 1}, {2, 3}])
+print(array.dtype)  # object
+
+# U - unicode string
+array = np.array(["hello", "world"])
+print(array.dtype)  # <U5
+# TIP: <U5 means "Unicode string of 5 characters"
+
+# S - string
+array = np.array(["hello", "world"], dtype="S")
+print(array.dtype)  # |S5
+# TIP: |S5 means "String of 5 characters"
+
+# V - void (arbitrary data type)
+array = np.array([], dtype="V")
+print(array.dtype)  # |V8
+# TIP: |V8 means "Void data type of 8 bytes"
