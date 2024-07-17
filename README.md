@@ -21,6 +21,28 @@ This repository contains code for various machine learning concepts and algorith
 
 > Tip: You can also use `nodemon` to automatically restart the output whenever you make changes to the file. Install nodemon using `npm install -g nodemon` and run the python file using `nodemon --exec python {folder}/{file}`
 
+## Table of Contents
+
+### Basics
+
+- [Statistics Basics](basics/statistics-basics.py)
+
+### Numpy
+
+- [Array Create](numpy/array-create.py)
+- [Array Iterate](numpy/array-iterate.py)
+- [Array Reshape](numpy/array-reshape.py)
+- [Array Slicing](numpy/array-slicing.py)
+- [Array](numpy/array.py)
+- [Basics](numpy/basics.py)
+- [Copy vs View](numpy/copy-vs-view.py)
+- [Data Types](numpy/data-types.py)
+
+### Pandas
+
+- [Manipulate Data](pandas/manipulate-data.py)
+- [Read Data](pandas/read-data.py)
+
 ## License
 
 - [MIT](LICENSE.md)
