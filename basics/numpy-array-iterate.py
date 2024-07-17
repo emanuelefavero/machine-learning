@@ -50,3 +50,22 @@ for num in np.nditer(array):
 array = np.array([[1, 2], [3, 4]])
 for num in np.nditer(array):
     print(num)  # 1 2 3 4
+
+# ITERATE ARRAY WITH DIFFERENT DATA TYPES
+array = np.array([1, 2, 3])
+for num in np.nditer(array, flags=["buffered"], op_dtypes=["S"]):
+    print(num)
+
+# TIP: The op_dtypes parameter is used to change
+# the data type of the array elements
+# TIP: The buffered flag is needed for memory purposes
+
+# ITERATE ARRAY WITH DIFFERENT STEP SIZE
+array = np.array([[1, 2], [3, 4]])
+for num in np.nditer(array[:, ::2]):
+    print(num)  # 1 3
+
+# SHOW THE INDEX OF THE ELEMENT
+array = np.array([1, 2, 3])
+for index, num in np.ndenumerate(array):
+    print(index, num)  # (0,) 1 (1,) 2 (2,) 3
