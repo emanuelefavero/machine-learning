@@ -34,3 +34,20 @@ print(array.shape)  # (2, 2)
 # TIP: To know the number of elements in the array,
 # you can use the size attribute
 print(array.size)  # 4
+
+# ------------------------------
+
+# FLATTEN ARRAY
+# The flatten() method returns a 1-D array
+array = np.array([[1, 2], [3, 4]])
+flattened = array.flatten()
+print(flattened)  # [1 2 3 4]
+
+# RAVEL ARRAY
+# The ravel() method returns a 1-D array
+array = np.array([[1, 2], [3, 4]])
+raveled = array.ravel()
+print(raveled)  # [1 2 3 4]
+print(raveled.base is array)  # True
+# TIP: The ravel() method returns a view of the original array
+
