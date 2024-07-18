@@ -27,3 +27,31 @@ array1 = np.array([1, 2])
 array2 = np.array([3, 4])
 array = np.stack((array1, array2), axis=1)
 print(array)  # [[1 3] [2 4]]
+
+# ------------------------------
+# HELPER FUNCTIONS
+
+# * hstack() METHOD
+# hstack() stacks arrays along rows
+array1 = np.array([1, 2])
+array2 = np.array([3, 4])
+array = np.hstack((array1, array2))
+print(array)
+
+# TIP: hstack() is equivalent to concatenate() with axis=0
+
+# * vstack() METHOD
+# vstack() stacks arrays along columns
+array1 = np.array([1, 2])
+array2 = np.array([3, 4])
+array = np.vstack((array1, array2))
+print(array)  # [[1 2] [3 4]]
+
+# TIP: vstack() is equivalent to concatenate() with axis=1
+
+# * dstack() METHOD
+# dstack() stacks arrays along height (depth)
+array1 = np.array([1, 2])
+array2 = np.array([3, 4])
+array = np.dstack((array1, array2))
+print(array)  # [[[1 3] [2 4]]]
