@@ -26,3 +26,7 @@ print(result)  # 2, index of 3
 result = np.searchsorted(array, 3, side="right")
 print(result)  # 3, index of 4
 # ? Explanation: 3 is at index 2, but the right side of 3 is at index 3
+
+# Search more than one value
+result = np.searchsorted(array, [3, 4])
+print(result)  # [2 3], indexes of 3 and 4
