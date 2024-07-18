@@ -14,7 +14,7 @@ This repository contains code for various machine learning concepts and algorith
 - Upgrade pip using `pip install --upgrade pip`
 - Install the required libraries using `pip install -r requirements.txt`
 
-> Note: If you add any new library with `python -m pip install {library}`, please update the requirements.txt file using `pip freeze > requirements.txt`
+> Note: If you add any new library with `python -m pip install {library}`, please update the requirements.txt file by deleting it and then running `pip freeze > requirements.txt`
 
 ## Usage
 
