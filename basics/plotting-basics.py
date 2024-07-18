@@ -19,16 +19,22 @@ plt.scatter(df["Age"], df["Fare"], c="#f0f")
 plt.xlabel("Age")
 plt.ylabel("Fare")
 
-# Add a title
+# Title
 plt.title("Titanic passengers")
 
-# Add a line
+# Line
 # first two values are the x-axis, the last two are the y-axis
 plt.plot([22, 38], [7, 71], color="#78ff78bf")
 
-# Add a legend
-plt.legend(["Passengers", "Line"])
+# Grid
+plt.grid(True)
 
+# Text
+plt.text(22, 7, "Youngest", fontsize=10, color="blue")
+plt.text(38, 71, "Oldest", fontsize=10, color="blue")
+
+# Legend
+plt.legend(["Passengers", "Line"])
 
 # Show the plot
 plt.show()
