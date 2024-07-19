@@ -5,7 +5,7 @@ df = pd.read_csv("data/titanic-big.csv")
 plt.scatter(df["Fare"], df["Age"], c=df["Survived"])
 plt.xlabel("Fare")
 plt.ylabel("Age")
-plt.legend(["Did not survive"])
+plt.title("Titanic passengers")
 
 # TIP: Survived: yellow dots, did not survive: purple dots
 
@@ -33,6 +33,7 @@ plt.legend(["Did not survive"])
 
 # Add a line to the plot (hardcoded)
 plt.plot([30, 100], [0, 80], color="magenta")
+plt.legend(["Did not survive", "Prediction line"], loc="upper right")
 
 # Show the plot
 plt.show()
